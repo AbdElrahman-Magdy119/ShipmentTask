@@ -1,0 +1,149 @@
+.dialog-addRoom {
+  .q-tab-panels {
+    .q-tab-panel {
+      label {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .q-card__actions {
+    padding-left: 0px;
+    .save-button {
+      margin-bottom: 22px;
+      button {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        appearance: none;
+        text-align: center;
+        box-sizing: border-box;
+        font-weight: 500;
+        font-size: 14px;
+        border-width: 1px;
+        border-style: solid;
+        border-image: initial;
+        transition: all 0.1s ease 0s;
+        color: $white;
+        background-color: $blue;
+        border-color: $blue;
+        border-radius: 20px;
+        padding: 10px 35px;
+      }
+    }
+  }
+}
+
+// start desgin popup delete
+.popup_delete {
+  .card {
+    padding: 26px 11px 0;
+    border-radius: 13px;
+    // desgin icon waring
+    .icon_waring {
+      text-align: center;
+      i {
+        font-size: 40px;
+        color: $red;
+        border: 1px solid $red;
+        border-radius: 50%;
+        padding: 10px;
+      }
+    }
+    .iconNotification {
+      display: flex;
+
+      // i {
+      //   font-size: 50px;
+      //   color: $positive-1;
+      //   border: 1px solid $positive-1;
+      //   border-radius: 50%;
+      //   padding: 10px;
+      // }
+
+      #bell {
+        display: block;
+        width: 10vmin;
+        min-width: 4rem;
+        height: auto;
+        text-align: center;
+        animation: ring 1.5s infinite ease-in-out;
+        margin: 0 41%;
+      }
+
+      #clapper-group {
+        transform-origin: top center;
+        animation: ring-clapper 1.5s infinite linear;
+      }
+
+      @keyframes ring {
+        0% {
+          transform: rotate(-30deg);
+        }
+        50% {
+          transform: rotate(30deg);
+        }
+        100% {
+          transform: rotate(-30deg);
+        }
+      }
+
+      @keyframes ring-clapper {
+        0% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(20deg);
+        }
+        70% {
+          transform: rotate(-20deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    // desgin title
+    .sure {
+      text-align: center;
+      margin-top: 6px;
+      span {
+        font-size: 20px;
+        color: $gray-3;
+        text-transform: capitalize;
+      }
+    }
+    // desgin text
+    .text-delete {
+      color: $gray-4;
+      font-size: 14px;
+    }
+    // start desgin buttons
+    .row-buttons_delete_cancel {
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+      margin-bottom: 5px;
+      .button_cancel {
+        background-color: $gray-4;
+        color: $white;
+        padding: 5px 20px;
+        font-size: 15px;
+      }
+      .buttons_Delete {
+        padding: 5px 20px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+// end popup delete
+
+//
+@media (min-width: 600px) {
+  .popup_delete {
+    .card {
+      max-width: 450px;
+    }
+  }
+}

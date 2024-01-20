@@ -1,0 +1,254 @@
+body {
+  // background: #f5f8fa;
+}
+
+.q-item__label{
+  color: #1f1f6a;
+}
+
+.q-icon{
+   color: #666671;
+  // background-color: #ffffff;
+}
+
+.q-link{
+  color: #418dd1;
+}
+
+.q-avatar{
+  background-color: #1f1f6a !important ;
+}
+
+.fit{
+  background-color: #f9f9fb !important;
+}
+
+.q-btn{
+  background-color: #1f1f6a !important ;
+}
+
+.ellipsis{
+  color: #1f1f30 !important;
+}
+
+.q-item__label + .q-item__label {
+  margin-top: 0px;
+}
+.breadcrumbs_custom {
+  padding: 30px 30px 10px 30px;
+  background-color: #ffffff;
+}
+
+.q-layout{
+  background-color: #ffffff;
+}
+.main-layout {
+  .logo {
+    // width: 100%;
+    // height: 70px;
+    // text-align: center;
+
+    .image {
+      // margin-top: 4px;
+      width: 70%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .q-header {
+    .q-layout__shadow {
+      &::after {
+        box-shadow: none;
+      }
+    }
+  }
+  .q-page-container {
+    // background: #f5f8fa;
+  }
+  .admin-info {
+    align-items: center;
+    .q-avatar {
+      font-size: 35px;
+      cursor: pointer;
+    }
+  }
+  .q-drawer {
+    .q-list {
+      .q-item {
+        margin: 0 10px;
+        border-radius: 5px;
+        color: #9d9da6;
+        &:last-child {
+          padding: 0;
+        }
+      }
+      .dropDownLinks {
+        padding: 0;
+        .router-link-exact-active {
+          color: #fff;
+        }
+      }
+      .dropDownLinks:hover > .q-focus-helper {
+        opacity: 0;
+      }
+      /////////////////////////////////////
+
+      .container_dropDown_menu {
+        .q-item__section--avatar {
+          margin-left: 6%;
+        }
+        .q-expansion-item {
+          .q-item {
+            margin: 0px;
+            padding: 0;
+            min-height: 48px;
+          }
+
+          .q-card {
+            background: none;
+            line-height: 2;
+            .q-card__section {
+              padding: 0px 0 0 70px;
+              .menu-link {
+                text-decoration: auto;
+                 text-transform: capitalize;
+                color: #9d9da6;
+                display: inline-block;
+                width: 100%;
+              }
+              .router-link-exact-active {
+                color: white;
+              }
+            }
+          }
+          .all_dropDown_menu_layout div {
+            margin: 1px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: all 0.2s ease-in-out;
+          }
+          .all_dropDown_menu_layout div:hover {
+            background-color: #9d9da629;
+          }
+        }
+      }
+
+      /////////////////////////////////////
+    }
+  }
+
+  .q-drawer {
+    .q-list {
+      .q-item.q-router-link--active {
+        color: white;
+      }
+    }
+  }
+
+  .q-tab .q-badge {
+    right: -3px;
+  }
+  .q-tab {
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  .fullscreen-icon {
+    font-size: 2em;
+    cursor: pointer;
+    color: $primary;
+  }
+}
+.text-subtitle1 {
+  line-height: 1.4rem;
+  p {
+    font-size: 14px;
+    opacity: 0.7;
+  }
+}
+.links {
+  max-width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.00937em;
+  text-decoration: none;
+  margin: 0 10px 16px 10px;
+  a {
+    text-decoration: none;
+    color: #000;
+    line-height: 1.2em;
+    opacity: 0.8;
+    width: 100%;
+    display: inline-block;
+    transition: 0.3s;
+    padding: 8px 16px;
+    min-height: 48px;
+    display: flex;
+    &:hover {
+      color: #16aaff;
+    }
+  }
+  div {
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    p {
+      margin: 0;
+      opacity: 0.8;
+      padding: 8px 16px;
+      transition: 0.3s;
+      align-items: center;
+    }
+    &:hover {
+      &::after {
+        transition: 0.3s;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0 /* rtl:ignore */;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-radius: inherit;
+        opacity: 0.1;
+        background-color: $primary;
+        border-radius: 4px;
+      }
+      p {
+        color: #16aaff;
+      }
+    }
+  }
+}
+.dropdown-info {
+  padding-bottom: 0;
+}
+.divider {
+  padding: 0;
+  li {
+    margin: 0.5rem 0;
+    height: 1px;
+    overflow: hidden;
+    background: #dee2e6;
+  }
+}
+
+// start logo
+
+//
+
+// media quary
+@media (max-width: 1023.5px) {
+  .main-layout .q-header {
+    left: 0 !important;
+  }
+  .main-layout .q-page-container {
+    padding-left: 0 !important;
+  }
+}
+
+/////////////////////
+
+//////////////////////////
